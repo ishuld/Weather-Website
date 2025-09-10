@@ -3,5 +3,9 @@ import react from '@vitejs/plugin-react'
 
 export default defineConfig({
   plugins: [react()],
-  base: '/Weather-Website/', // ← Changed to your actual repo name
+  base: '/Weather-Website/',
+  build: {
+    outDir: 'dist',
+    assetsDir: 'assets'
+  }
 })
